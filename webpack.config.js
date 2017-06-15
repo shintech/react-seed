@@ -12,7 +12,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 const environment = process.env.NODE_ENV || 'production'
 
 const paths = {
-  ENTRY: path.join(__dirname, 'app', 'main.js'),
+  ENTRY: path.join(__dirname, 'app', 'main.jsx'),
   OUTPUT_FILENAME: 'bundle.js',
   OUTPUT: path.join(__dirname, 'build', 'static'),
   APP: path.join(__dirname, 'app')
@@ -20,7 +20,7 @@ const paths = {
 
 const config = {
   entry: [
-    'webpack/hot/only-dev-server',    
+    'webpack/hot/only-dev-server',
     paths.ENTRY
   ],
   devServer: {
