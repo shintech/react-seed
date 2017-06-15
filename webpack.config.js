@@ -20,12 +20,12 @@ const paths = {
 
 const config = {
   entry: [
-    'webpack/hot/only-dev-server',
+    // 'webpack/hot/only-dev-server',
     paths.ENTRY
   ],
   devServer: {
-    public: 'shintech.ninja:8000',
-    hot: true
+    public: 'shintech.ninja:8000'
+    // hot: true
   },
   module: {
     rules: [
