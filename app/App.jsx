@@ -7,9 +7,12 @@ class App extends React.Component {
       color: '#FF0000'
     }
 
+    var i = 1
+
     return (
       <div>
         <h1 style={myStyle}>Header</h1>
+        <p>{i === 1 ? 'True' : 'False'}</p>
       </div>
     )
   }
