@@ -20,6 +20,7 @@ const paths = {
 
 const config = {
   entry: [
+    'whatwg-fetch',
     // 'webpack/hot/only-dev-server',
     paths.ENTRY
   ],

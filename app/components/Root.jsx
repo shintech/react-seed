@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from './Navigation.jsx'
+import Table from './Table.jsx'
 
 class Root extends React.Component {
   render () {
@@ -8,7 +9,7 @@ class Root extends React.Component {
         <Navigation titleProp={this.props.titleProp} />
 
         <div className='container-fluid'>
-          <div id='main-view' />
+          <Table />
         </div>
       </div>
     )
