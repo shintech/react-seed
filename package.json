@@ -1,6 +1,6 @@
 {
   "name": "react-seed",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Shintech React Seed",
   "main": "build/server.js",
   "repository": "https://github.com/shintech/react-seed",
