@@ -1,1 +1,26 @@
-// empty
+.navbar-default {
+    background-color: #ff5500;
+}
+
+/* change the brand and text color */
+.navbar-default .navbar-brand,
+.navbar-default .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-default .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-default .nav-item.active .nav-link,
+.navbar-default .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent; /* Removes border color */
+}
+
+.panel-primary .panel-heading {
+    background-color: #ff5500;
+}

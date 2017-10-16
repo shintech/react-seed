@@ -20,14 +20,8 @@ const paths = {
 
 const config = {
   entry: [
-    'whatwg-fetch',
-    // 'webpack/hot/only-dev-server',
     paths.ENTRY
   ],
-  devServer: {
-    public: 'shintech.ninja:8000'
-    // hot: true
-  },
   module: {
     rules: [
       {
