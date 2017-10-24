@@ -3,7 +3,6 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import chalk from 'chalk'
 import path from 'path'
-import morgan from 'morgan'
 import winston from 'winston-color'
 import favicon from 'serve-favicon'
 import init from './db'
@@ -23,7 +22,7 @@ const options = {
 
 options.db = init(options)
 
-const { app, port, environment, logger } = options
+const { app, port, logger } = options
 
 const server = http.Server(app)
 const router = getRouter(options)
@@ -36,10 +35,6 @@ app.use('/css', express.static(path.join(_parentDir, 'node_modules', 'bootstrap'
 app.use('/images', express.static(path.join(__dirname, 'resources', 'images')))
 app.use('/fonts', express.static(path.join(_parentDir, 'node_modules', 'bootstrap', 'fonts')))
 app.use(express.static(path.join(__dirname, 'static')))
-
-if (environment !== 'test') {
-  app.use(morgan('dev'))
-}
 
 app.use('/api', router)
 
