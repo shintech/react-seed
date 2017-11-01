@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Table extends React.Component {
+export default class Table extends React.Component {
   constructor (props) {
     super(props)
 
@@ -23,8 +23,8 @@ class Table extends React.Component {
         <div className='panel-heading'>
            Panel
         </div>
-        <div className='panel-body container-fluid' id='wrapper'>
-          <table className='table'>
+        <div className='panel-body table-responsive' id='wrapper'>
+          <table className='table table-hover'>
             <thead>
               <tr>
                 <th id='name' className='table-header'>Name</th>
@@ -47,5 +47,3 @@ class Table extends React.Component {
     )
   }
 }
-
-export default Table
