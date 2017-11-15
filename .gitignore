@@ -4,6 +4,7 @@
 /npm-debug.log
 /docker-compose.yml
 /*.env
+/*.log
 /data
 *pagurbate
 *backbone_table_view
